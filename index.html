@@ -16,6 +16,7 @@
         .card { @apply bg-white p-6 rounded-lg shadow-lg transform transition duration-300 hover:shadow-xl; }
         .project-card:hover { @apply scale-105; }
         .font-poppins { font-family: 'Poppins', sans-serif; }
+        .project-img { @apply h-40 w-full object-cover rounded-t-lg mb-4; } /* Ukuran seragam untuk semua gambar */
     </style>
 </head>
 <body class="bg-gray-50">
@@ -129,50 +130,47 @@
             <h2 class="section-title">Projects</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <div class="card project-card" data-aos="fade-up" data-aos-delay="100">
-                    <img src="assets/match.jpg" alt="Tech Match Game" class="h-48 w-full object-cover rounded-t-lg mb-4">
+                    <img src="assets/match.jpg" alt="Tech Match Game" class="project-img">
                     <h3 class="text-xl font-semibold text-blue-900">Tech Match Game - IT Del</h3>
                     <p class="text-gray-500">March - April 2025</p>
                     <p class="text-gray-600 mt-2">A match-3 game with technology-themed icons, built with Unity and C#. Designed engaging levels and a special bomb system for dynamic gameplay.</p>
                     <p class="text-sm text-gray-500 mt-2">Tech: Unity, C#</p>
                 </div>
                 <div class="card project-card" data-aos="fade-up" data-aos-delay="200">
-                    <img src="assets/lidi ditenun.jpg" alt="Lidi DiTenun Module Feature" class="h-48 w-full object-cover rounded-t-lg mb-4">
+                    <img src="assets/lidi ditenun.jpg" alt="Lidi DiTenun Module Feature" class="project-img">
                     <h3 class="text-xl font-semibold text-blue-900">Lidi DiTenun Module Feature - PT Digital Tenun Nusantara</h3>
                     <p class="text-gray-500">June - December 2024</p>
                     <p class="text-gray-600 mt-2">Developed pattern merging and coloring features using Django, Pillow, and OpenCV. Applied heuristic evaluation for enhanced usability.</p>
                     <p class="text-sm text-gray-500 mt-2">Tech: Django, Pillow, OpenCV, Figma</p>
                 </div>
                 <div class="card project-card" data-aos="fade-up" data-aos-delay="300">
-                    <img src="assets/lembur.jpg" alt="Website of the Informatics Undergraduate Student Association" class="h-48 w-full object-cover rounded-t-lg mb-4">
-                    <div class="bg-gray-200 h-48 rounded-t-lg mb-4 flex items-center justify-center text-gray-700 font-poppins">Website Lembur</div>
+                    <img src="assets/lembur.jpg" alt="Website Lembur Karyawan" class="project-img">
                     <h3 class="text-xl font-semibold text-blue-900">Website Lembur Karyawan - PT Tolan Tiga Indonesia</h3>
                     <p class="text-gray-500">June - December 2024</p>
                     <p class="text-gray-600 mt-2">Built a web-based overtime management system for efficient employee tracking.</p>
                     <p class="text-sm text-gray-500 mt-2">Tech: HTML, CSS, JavaScript, React</p>
                 </div>
                 <div class="card project-card" data-aos="fade-up" data-aos-delay="400">
-                    <img src="assets/lostfound.jpg" alt="LostAndFound" class="h-48 w-full object-cover rounded-t-lg mb-4">
+                    <img src="assets/lostfound.jpg" alt="LostAndFound" class="project-img">
                     <h3 class="text-xl font-semibold text-blue-900">LostAndFound - IT Del</h3>
                     <p class="text-gray-500">May 2024</p>
                     <p class="text-gray-600 mt-2">A mobile app for tracking lost and found items, with integrated UI and backend services.</p>
                     <p class="text-sm text-gray-500 mt-2">Tech: Kotlin, Jetpack Compose</p>
                 </div>
                 <div class="card project-card" data-aos="fade-up" data-aos-delay="500">
-                    <img src="assets/himasti.jpg" alt="Website of the Informatics Undergraduate Student Association" class="h-48 w-full object-cover rounded-t-lg mb-4">
+                    <img src="assets/whatsapp.jpg" alt="WhatsApp Clone" class="project-img">
+                    <h3 class="text-xl font-semibold text-blue-900">WhatsApp Clone - IT Del</h3>
+                    <p class="text-gray-500">June 2024</p>
+                    <p class="text-gray-600 mt-2">A mobile messaging app clone built with Kotlin, featuring chat functionality and user authentication.</p>
+                    <p class="text-sm text-gray-500 mt-2">Tech: Kotlin, Jetpack Compose</p>
+                </div>
+                <div class="card project-card" data-aos="fade-up" data-aos-delay="600">
+                    <img src="assets/himasti.jpg" alt="Website of the Informatics Undergraduate Student Association" class="project-img">
                     <h3 class="text-xl font-semibold text-blue-900">Website of the Informatics Undergraduate Student Association</h3>
                     <p class="text-gray-500">January 2024</p>
                     <p class="text-gray-600 mt-2">Developed a responsive website for student communication, with UI/UX design and database integration.</p>
                     <p class="text-sm text-gray-500 mt-2">Tech: HTML, CSS, JavaScript, Figma, MySQL</p>
                 </div>
-                <div class="card project-card" data-aos="fade-up" data-aos-delay="600">
-                    <div class="bg-gray-200 h-48 rounded-t-lg mb-4 flex items-center justify-center text-gray-700 font-poppins">Portfolio</div>
-                    <h3 class="text-xl font-semibold text-blue-900">Portfolio - Infinite Learning</h3>
-                    <p class="text-gray-500">November 2024</p>
-                    <p class="text-gray-600 mt-2">A personal portfolio showcasing development skills and previous works.</p>
-                    <p class="text-sm text-gray-500 mt-2">Tech: HTML, CSS, JavaScript</p>
-                </div>
-            </div>
-        </div>
     </section>
 
     <!-- Skills Section -->
