@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Riskia Naomi Sitorus, a Computer Science student specializing in web and mobile development.">
+    <meta name="keywords" content="Riskia Naomi Sitorus, portfolio, web developer, mobile developer, JavaScript, React, Django">
+    <title>Riskia Naomi Sitorus - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .section-title { @apply text-3xl md:text-4xl font-bold mb-8 text-gray-800 font-poppins; }
+        .card { @apply bg-white p-6 rounded-lg shadow-lg transform transition duration-300 hover:shadow-xl; }
+        .project-card:hover { @apply scale-105; }
+        .font-poppins { font-family: 'Poppins', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50" data-aos="fade-down">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="text-2xl font-bold text-blue-900 font-poppins">Riskia Naomi Sitorus</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="text-gray-700 hover:text-blue-600 font-medium">About</a>
+                    <a href="#experience" class="text-gray-700 hover:text-blue-600 font-medium">Experience</a>
+                    <a href="#projects" class="text-gray-700 hover:text-blue-600 font-medium">Projects</a>
+                    <a href="#skills" class="text-gray-700 hover:text-blue-600 font-medium">Skills</a>
+                    <a href="#contact" class="text-gray-700 hover:text-blue-600 font-medium">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="text-gray-700 hover:text-blue-600 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md">
+            <div class="px-4 pt-2 pb-3 space-y-2">
+                <a href="#about" class="block text-gray-700 hover:text-blue-600">About</a>
+                <a href="#experience" class="block text-gray-700 hover:text-blue-600">Experience</a>
+                <a href="#projects" class="block text-gray-700 hover:text-blue-600">Projects</a>
+                <a href="#skills" class="block text-gray-700 hover:text-blue-600">Skills</a>
+                <a href="#contact" class="block text-gray-700 hover:text-blue-600">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-24" data-aos="fade-up">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 font-poppins">Riskia Naomi Sitorus</h1>
+            <p class="text-xl md:text-2xl mb-6 font-light">Computer Science Enthusiast | Web & Mobile Developer</p>
+            <div class="flex justify-center space-x-6">
+                <a href="https://github.com/RiskiaNaomiSitorus" target="_blank" class="text-white hover:text-gray-200 font-medium">GitHub</a>
+                <a href="https://www.linkedin.com/in/riskia-naomi-sitorus-5a20ba246" target="_blank" class="text-white hover:text-gray-200 font-medium">LinkedIn</a>
+                <a href="mailto:riskianaomil7@gmail.com" class="text-white hover:text-gray-200 font-medium">Email</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20" data-aos="fade-up">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="section-title">About Me</h2>
+            <p class="text-lg text-gray-600 leading-relaxed">
+                I am a final-year Computer Science student at Institut Teknologi Del, passionate about leveraging technology to solve real-world challenges. With expertise in web and mobile development, I specialize in creating user-friendly, innovative solutions using tools like JavaScript, React, Django, and Kotlin. My experience spans collaborative projects, internships, and organizational roles, where I’ve honed skills in programming, UI/UX design, and problem-solving. My goal is to contribute to digital transformation in industries like healthcare and education through impactful software solutions.
+            </p>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="bg-gray-100 py-20" data-aos="fade-up">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="section-title">Experience</h2>
+            <div class="card" data-aos="fade-up" data-aos-delay="100">
+                <h3 class="text-xl font-semibold text-blue-900">Member, DPPM - Kemdiktisaintek</h3>
+                <p class="text-gray-500">March 2025 - Present</p>
+                <ul class="list-disc ml-5 mt-2 text-gray-600">
+                    <li>Planned and evaluated technology-driven projects to enhance higher education quality in Indonesia.</li>
+                    <li>Collaborated on designing innovative educational technology solutions.</li>
+                </ul>
+            </div>
+            <div class="card" data-aos="fade-up" data-aos-delay="200">
+                <h3 class="text-xl font-semibold text-blue-900">Administrative Staff, PT Digital Tenun Nusantara - IT Del</h3>
+                <p class="text-gray-500">February 2025 - Present</p>
+                <ul class="list-disc ml-5 mt-2 text-gray-600">
+                    <li>Managed internal administration to ensure smooth daily operations.</li>
+                    <li>Coordinated inter-division activities for efficient workflows.</li>
+                </ul>
+            </div>
+            <div class="card" data-aos="fade-up" data-aos-delay="300">
+                <h3 class="text-xl font-semibold text-blue-900">Web Developer, Independent Study - PT Kinema Systrans Multimedia</h3>
+                <p class="text-gray-500">September 2024 - January 2025</p>
+                <ul class="list-disc ml-5 mt-2 text-gray-600">
+                    <li>Developed and tested software for assigned projects.</li>
+                    <li>Designed and implemented technology solutions with the development team.</li>
+                    <li>Analyzed system requirements and resolved technical issues.</li>
+                </ul>
+            </div>
+            <div class="card" data-aos="fade-up" data-aos-delay="400">
+                <h3 class="text-xl font-semibold text-blue-900">Web Developer Intern, PT Tolan Tiga Indonesia</h3>
+                <p class="text-gray-500">June 2024 - September 2024</p>
+                <ul class="list-disc ml-5 mt-2 text-gray-600">
+                    <li>Developed and maintained web applications using HTML, CSS, JavaScript, and React.</li>
+                    <li>Conducted code testing for functionality and compatibility.</li>
+                    <li>Created technical documentation for future reference.</li>
+                </ul>
+            </div>
+            <div class="card" data-aos="fade-up" data-aos-delay="500">
+                <h3 class="text-xl font-semibold text-blue-900">Technical Mobile, Bootcamp Android Jetpack Compose - Infinite Learning</h3>
+                <p class="text-gray-500">June 2024</p>
+                <ul class="list-disc ml-5 mt-2 text-gray-600">
+                    <li>Learned Kotlin fundamentals and Android development with Jetpack Compose.</li>
+                    <li>Developed UI slicing and mobile app prototypes.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20" data-aos="fade-up">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="section-title">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="card project-card" data-aos="fade-up" data-aos-delay="100">
+                    <img src="assets/match.jpg" alt="Tech Match Game" class="h-48 w-full object-cover rounded-t-lg mb-4">
+                    <h3 class="text-xl font-semibold text-blue-900">Tech Match Game - IT Del</h3>
+                    <p class="text-gray-500">March - April 2025</p>
+                    <p class="text-gray-600 mt-2">A match-3 game with technology-themed icons, built with Unity and C#. Designed engaging levels and a special bomb system for dynamic gameplay.</p>
+                    <p class="text-sm text-gray-500 mt-2">Tech: Unity, C#</p>
+                </div>
+                <div class="card project-card" data-aos="fade-up" data-aos-delay="200">
+                    <img src="assets/lidi ditenun.jpg" alt="Lidi DiTenun Module Feature" class="h-48 w-full object-cover rounded-t-lg mb-4">
+                    <h3 class="text-xl font-semibold text-blue-900">Lidi DiTenun Module Feature - PT Digital Tenun Nusantara</h3>
+                    <p class="text-gray-500">June - December 2024</p>
+                    <p class="text-gray-600 mt-2">Developed pattern merging and coloring features using Django, Pillow, and OpenCV. Applied heuristic evaluation for enhanced usability.</p>
+                    <p class="text-sm text-gray-500 mt-2">Tech: Django, Pillow, OpenCV, Figma</p>
+                </div>
+                <div class="card project-card" data-aos="fade-up" data-aos-delay="300">
+                    <img src="assets/lembur.jpg" alt="Website of the Informatics Undergraduate Student Association" class="h-48 w-full object-cover rounded-t-lg mb-4">
+                    <div class="bg-gray-200 h-48 rounded-t-lg mb-4 flex items-center justify-center text-gray-700 font-poppins">Website Lembur</div>
+                    <h3 class="text-xl font-semibold text-blue-900">Website Lembur Karyawan - PT Tolan Tiga Indonesia</h3>
+                    <p class="text-gray-500">June - December 2024</p>
+                    <p class="text-gray-600 mt-2">Built a web-based overtime management system for efficient employee tracking.</p>
+                    <p class="text-sm text-gray-500 mt-2">Tech: HTML, CSS, JavaScript, React</p>
+                </div>
+                <div class="card project-card" data-aos="fade-up" data-aos-delay="400">
+                    <img src="assets/lostfound.jpg" alt="LostAndFound" class="h-48 w-full object-cover rounded-t-lg mb-4">
+                    <h3 class="text-xl font-semibold text-blue-900">LostAndFound - IT Del</h3>
+                    <p class="text-gray-500">May 2024</p>
+                    <p class="text-gray-600 mt-2">A mobile app for tracking lost and found items, with integrated UI and backend services.</p>
+                    <p class="text-sm text-gray-500 mt-2">Tech: Kotlin, Jetpack Compose</p>
+                </div>
+                <div class="card project-card" data-aos="fade-up" data-aos-delay="500">
+                    <img src="assets/himasti.jpg" alt="Website of the Informatics Undergraduate Student Association" class="h-48 w-full object-cover rounded-t-lg mb-4">
+                    <h3 class="text-xl font-semibold text-blue-900">Website of the Informatics Undergraduate Student Association</h3>
+                    <p class="text-gray-500">January 2024</p>
+                    <p class="text-gray-600 mt-2">Developed a responsive website for student communication, with UI/UX design and database integration.</p>
+                    <p class="text-sm text-gray-500 mt-2">Tech: HTML, CSS, JavaScript, Figma, MySQL</p>
+                </div>
+                <div class="card project-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="bg-gray-200 h-48 rounded-t-lg mb-4 flex items-center justify-center text-gray-700 font-poppins">Portfolio</div>
+                    <h3 class="text-xl font-semibold text-blue-900">Portfolio - Infinite Learning</h3>
+                    <p class="text-gray-500">November 2024</p>
+                    <p class="text-gray-600 mt-2">A personal portfolio showcasing development skills and previous works.</p>
+                    <p class="text-sm text-gray-500 mt-2">Tech: HTML, CSS, JavaScript</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="bg-gray-100 py-20" data-aos="fade-up">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="section-title">Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="card" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="text-xl font-semibold text-blue-900 mb-4">Technical Skills</h3>
+                    <ul class="list-disc ml-5 text-gray-600">
+                        <li>Web Development: HTML, CSS, JavaScript, React, Angular</li>
+                        <li>Mobile Development: Kotlin, Jetpack Compose</li>
+                        <li>Version Control: Git, GitHub</li>
+                        <li>Database: MySQL, Node.js, MongoDB</li>
+                        <li>Framework: Django</li>
+                        <li>Library: Pillow, OpenCV</li>
+                        <li>Game Engine: Unity</li>
+                        <li>Design: UI/UX Design (Figma, Canva), Responsive Design, Adobe XD</li>
+                    </ul>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="text-xl font-semibold text-blue-900 mb-4">Soft Skills</h3>
+                    <ul class="list-disc ml-5 text-gray-600">
+                        <li>Team Collaboration</li>
+                        <li>Problem-Solving</li>
+                        <li>Time Management</li>
+                        <li>Adaptability and Learning</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20" data-aos="fade-up">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="section-title">Contact Me</h2>
+            <form id="contact-form" class="card max-w-lg mx-auto">
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-700 font-medium">Name</label>
+                    <input type="text" id="name" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" required>
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700 font-medium">Email</label>
+                    <input type="email" id="email" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" required>
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-gray-700 font-medium">Message</label>
+                    <textarea id="message" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 font-medium">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-lg font-poppins">© 2025 Riskia Naomi Sitorus. All rights reserved.</p>
+            <div class="flex justify-center space-x-6 mt-4">
+                <a href="https://github.com/RiskiaNaomiSitorus" target="_blank" class="hover:text-gray-200">GitHub</a>
+                <a href="https://www.linkedin.com/in/riskia-naomi-sitorus-5a20ba246" target="_blank" class="hover:text-gray-200">LinkedIn</a>
+                <a href="mailto:riskianaomil7@gmail.com" class="hover:text-gray-200">Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({ duration: 800, once: true });
+
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // EmailJS initialization
+        emailjs.init("YOUR_PUBLIC_KEY"); // Ganti dengan Public Key EmailJS Anda
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", {
+                from_name: document.getElementById('name').value,
+                from_email: document.getElementById('email').value,
+                message: document.getElementById('message').value
+            }).then(() => {
+                alert('Message sent successfully!');
+                document.getElementById('contact-form').reset();
+            }, (error) => {
+                alert('Failed to send message: ' + JSON.stringify(error));
+            });
+        });
+    </script>
+</body>
+</html>
